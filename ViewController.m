@@ -28,7 +28,7 @@ NSString *const kContentURLString =
     NSLog(@"Set MidRoll");
     [self hideContentPlayer];
     midroll = [[MFPreRollView alloc] initWithMidRollFrame:self.contentPlayerViewController];
-    [midroll setPreRollZoneID:@"18379" getViewController:self];
+    [midroll setZoneID:@"18379" getViewController:self];
     midroll.delegate = self;
     [midroll setPlayer];
 }

@@ -24,6 +24,9 @@
 
 
 @property(nonatomic,weak)id<MFPreRollDelegate>delegate;
+#pragma mark - Pre-roll set init frame;
+- (id)initWithFrame:(CGRect) frame;
+
 #pragma mark - Pre-roll set init frame with user player view;
 -(id)initWithView:(UIView *) playerView;
 
@@ -34,7 +37,7 @@
 -(void)getView:(UIViewController *)view;
 
 #pragma mark - 設定版位
--(void)setPreRollZoneID:(NSString *)zoneID;
+-(void)setZoneID:(NSString *)zoneID;
 
 #pragma mark - 開啟廣告
 - (void)setPlayer;
@@ -46,7 +49,7 @@
 -(void)resumePrerollVideo;
 
 #pragma mark - Multiple Settings
--(void)setPreRollZoneID:(NSString *)zoneID getViewController:(UIViewController *)view;
+-(void)setZoneID:(NSString *)zoneID getViewController:(UIViewController *)view;
 
 #pragma mark - 取得版本
 +(NSString *)version;
